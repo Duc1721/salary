@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tính Lương Nhân Viên</title>
+</head>
+
+<body>
+    <h1></h1>
+    <div class="input-container">
+        <label for="hourly-wage">Mức lương theo giờ</label>
+        <input type="number" id="hourly-wage" min="0" value="20000">
+        <button id="increase-wage">Tăng lương</button>
+        <button id="decrease-wage">Giảm lương</button>
+        <button id="add-hours">Thêm giờ</button>
+    </div>
+    <div class="input-container">
+        <label for="work-date">Ngày làm việc</label>
+        <input type="date" id="work-date">
+    </div>
+    <!-- Các trường giờ làm việc -->
+    <div class="input-container">
+        <label for="start-time">Bắt đầu</label>
+        <input type="time" id="start-time" value="07:00">
+    </div>
+    <div class="input-container">
+        <label for="end-time">Kết thúc</label>
+        <input type="time" id="end-time" value="19:00">
+    </div>
+    <div class="all-button">
+        <div id="total-salary"></div>
+    </div>
+    <div id="work-hours-list"></div>
+    <table id="table-salary">
+        <tr>
+            <th>NGÀY LÀM VIỆC</th>
+            <th>VÀO CA</th>
+            <th>RA CA</th>
+            <th>THỜI GIAN LÀM VIỆC</th>
+            <th>LƯƠNG MỖI NGÀY</th>
+            <th>XÓA</th>
+        </tr>
+        <tbody id="work-entries-table-body"></tbody>
+    </table>
+    <script src="salary.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a base font size and family */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Style the container for inputs */
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Style the number input */
+input[type="number"] {
+    text-align: center;
+    border: none;
+    color: #ff1111;
+    font-size: large;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: transparent; /* Transparent background */
+}
+
+/* Style the buttons */
+button {
+    background-color: #e74747;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 10em;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style the table container */
+#table-salary {
+    display: none;
+    width: 98%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 1%;
+}
+
+/* Style table headings and cells */
+th, td {
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style the total salary container */
+.total-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(241, 153, 31);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the delete button */
+.delete-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.delete-button:hover {
+    background-color: #ff3111;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Adjust padding and margins for smaller screens */
+    .input-container,
+    .total-container,
+    .delete-button {
+        padding: 5px;
+    }
+}
+ 
